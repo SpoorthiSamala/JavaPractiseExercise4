@@ -10,11 +10,11 @@ public class FrequencyOfCharacterTest {
     FrequencyOfCharacter frequencyOfChar;
     @Before
     public void setup(){
-        frequencyOfChar=new FrequencyOfCharacter();
+        frequencyOfChar=new FrequencyOfCharacter(); //creating an object
 
     }
     @Test
-    public void givenStringFindTheFrequencyOfCharacterInTheGivenString()
+    public void givenStringFindTheFrequencyOfCharacterInTheGivenString() //checking for frequency of character
     {
         int result=frequencyOfChar.findFrequencyOfTheCharacter("javaismylanguage",'a');
         assertEquals(4,result);
@@ -26,7 +26,7 @@ public class FrequencyOfCharacterTest {
         assertEquals(10,result);
     }
     @Test
-    public void checkIfOutputIsZeroWhenCharacterIsNotInString()
+    public void checkIfOutputIsZeroWhenCharacterIsNotInString() //returning 0 if the character is not in string
     {
         int result=frequencyOfChar.findFrequencyOfTheCharacter("Java is java again java again",'k');
         assertEquals(0,result);

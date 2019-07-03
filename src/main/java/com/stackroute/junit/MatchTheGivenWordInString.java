@@ -4,7 +4,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class MatchTheGivenWordInString {
-    public static String matchTheGivenWord(String string, String patternString) {
+    public static String matchTheGivenWord(String string, String patternString)
+    {   //matching the pattern in the given string
         String str = "";
         Pattern pattern = Pattern.compile(patternString);
         Matcher matcher = pattern.matcher(string);

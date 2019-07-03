@@ -10,7 +10,8 @@ public class MatchTheGivenWordInStringTest {
     MatchTheGivenWordInString matchTheGivenWordInString;
     @Before
     public void setUp(){
-        matchTheGivenWordInString=new MatchTheGivenWordInString();
+        matchTheGivenWordInString=new MatchTheGivenWordInString(); //creating an object
+
     }
     @Test
     public void checkTheOccuranceOfWordInTheGivenString(){
@@ -23,7 +24,8 @@ public class MatchTheGivenWordInStringTest {
         assertNotEquals("found: 1 : 4 - 6\n" + "found: 2 : 10 - 12\n" + "found: 1 : 4 - 6\n", result);
     }
     @Test
-    public void checkTheOutputIfTheGivenWordIsNotInTheGivenInputString() {
+    public void checkTheOutputIfTheGivenWordIsNotInTheGivenInputString() //checking with assertNotEquals
+    {
         String result = matchTheGivenWordInString.matchTheGivenWord("She sells seashells by the seashore", "se");
         assertNotEquals("found: 1 : 4 - 6\n" + "found: 2 : 10 - 12\n" + "found: 1 : 27 - 29\n", result);
     }

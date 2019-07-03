@@ -12,7 +12,7 @@ public class ReverseOfWordsInAStringTest {
     String expectedresult;
     @Before
     public void setUp()throws Exception {
-        reverseOfStringsInAStatement = new ReverseOfWordsInAString();
+        reverseOfStringsInAStatement = new ReverseOfWordsInAString(); //creating object
     }
 
     @Test

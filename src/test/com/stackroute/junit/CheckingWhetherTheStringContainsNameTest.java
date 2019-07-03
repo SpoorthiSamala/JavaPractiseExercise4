@@ -11,11 +11,12 @@ public class CheckingWhetherTheStringContainsNameTest {
 
     @Before
     public void setUp() {
-        theStringContainsName = new CheckingWhetherTheStringContainsName();
+        theStringContainsName = new CheckingWhetherTheStringContainsName(); //creating an object
     }
 
     @Test
-    public void givenInputStringContainsSpecifiedNameTHenReturnTrue() {
+    public void givenInputStringContainsSpecifiedNameTHenReturnTrue() //checking whether the string contains the name
+    {
         String result = theStringContainsName.returnTrueIfStringContainsName("is harry there?", "harry");
         assertEquals("true", result);
     }

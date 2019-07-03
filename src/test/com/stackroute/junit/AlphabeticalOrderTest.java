@@ -18,7 +18,8 @@ public class AlphabeticalOrderTest {
         assertEquals("is my name ramu",result);
     }
     @Test
-    public void givenAStringParagraghReturnsTrueForAssertNotEquals(){
+    public void givenAStringParagraghReturnsTrueForAssertNotEquals() //checking assertNotEquals
+    {
         String result=alphabeticalOrder.wordsInAlphabeticalOrder("my name is ramu");
         assertNotEquals("is my",result);
     }

@@ -1,7 +1,8 @@
 package com.stackroute.junit;
 
 public class ReverseOfWordsInAString {
-    public static String reverseOfStringsOfStatement(String statement) {
+    public static String reverseOfStringsOfStatement(String statement) //reverses each word in a string and returns the string
+    {
         if (statement.length() > 0) {
 
             String output = "";
